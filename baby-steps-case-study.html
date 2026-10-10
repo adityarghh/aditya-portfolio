@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#eeeae2" id="theme-color-meta">
+  <meta name="description" content="The story behind Baby Steps to the Mic: a personal project built to make public-speaking practice feel a little more approachable.">
+  <title>Baby Steps to the Mic — Aditya Raj</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="case-study.css">
+</head>
+<body class="case-study-page">
+  <header class="site-header">
+    <a class="wordmark" href="index.html#top" aria-label="Aditya Raj home">aditya<span>raj</span><b>®</b></a>
+    <nav aria-label="Main navigation">
+      <a href="index.html#work" aria-current="page">work <sup>03</sup></a>
+      <a href="index.html#about">about</a>
+      <a href="index.html#notes">currently</a>
+      <a href="index.html#contact" class="nav-contact">say hello ↗</a>
+    </nav>
+    <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">menu +</button>
+    <button class="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false"><span class="theme-toggle-icon" aria-hidden="true">☾</span><span class="theme-toggle-text">DARK</span></button>
+  </header>
+
+  <main>
+    <div class="case-shell">
+      <a class="back-link" href="index.html#work"><span aria-hidden="true">←</span> BACK TO SELECTED WORK</a><span class="clock-line case-clock">TIME RN <b class="live-clock">--:--:--</b></span>
+
+      <section class="case-hero" aria-labelledby="case-title">
+        <div class="case-kicker"><span>CASE STUDY / 01</span><span>AI · SPEECH · PERSONAL TOOL</span></div>
+        <h1 id="case-title">Baby Steps<br>to the <em>Mic.</em></h1>
+        <div class="case-hero-bottom">
+          <p class="case-deck">A small way back to speaking — built for the practice I needed, and for anyone else who might need it too.</p>
+          <dl class="case-meta">
+            <div><dt>ROLE</dt><dd>Product idea, design & development</dd></div>
+            <div><dt>BUILT WITH</dt><dd>HTML, CSS, JavaScript, Web Speech API, Claude, Vercel</dd></div>
+            <div><dt>FORMAT</dt><dd>Browser-based speaking practice</dd></div>
+          </dl>
+        </div>
+        <figure class="case-hero-visual">
+          <img src="assets/baby-steps-real.png" alt="A real screenshot of Baby Steps to the Mic's speaking practice interface, with a topic prompt and timed speaking session." fetchpriority="high">
+          <figcaption><span>01 / THE PRODUCT</span><span>A real screen from the project</span></figcaption>
+        </figure>
+      </section>
+
+      <section class="case-section case-opening" aria-labelledby="why-title">
+        <div class="section-marker"><span>01</span><span>THE REASON</span></div>
+        <div class="case-prose">
+          <h2 id="why-title">I wanted a way to <em>start again.</em></h2>
+          <p>After a stretch of feeling stagnant, I noticed that public speaking — and even expressing myself confidently — had become harder. I couldn't point to one neat reason. I just knew I wanted to do something about it.</p>
+          <p>So I started building something I could use myself: a place to practise speaking without needing an audience, a perfect topic, or a whole plan. The idea was to make starting small feel normal.</p>
+          <p>And I didn't want it to be useful only to me. If I was struggling to get the words moving again, someone else might appreciate a low-pressure way to practise too.</p>
+        </div>
+      </section>
+
+      <section class="case-section" aria-labelledby="practice-title">
+        <div class="section-marker"><span>02</span><span>THE EXPERIENCE</span></div>
+        <div class="case-prose">
+          <h2 id="practice-title">Make the first minute <em>easier.</em></h2>
+          <p>The hardest part of practising on your own can be deciding what to say. Baby Steps starts with a prompt library and an animated topic spinner, so the user can get a subject and begin instead of spending the session choosing one.</p>
+          <p>A speaking timer gives the attempt a clear shape. It can be adjusted, paused, and resumed, with a circular progress ring and a visual cue as time runs low. Live transcription makes the spoken words visible while the session is happening, alongside a running word count.</p>
+          <p>Those choices are intentionally simple: pick a prompt, start talking, and stay with it for a little while. The product is meant to help someone begin practising, not make the act of practising feel like another complicated task.</p>
+        </div>
+        <div class="practice-flow" aria-label="The speaking practice flow">
+          <div class="practice-step"><span>STEP 01</span><div class="step-icon prompt-icon" aria-hidden="true">↻</div><strong>Pick a topic</strong><small>A prompt gets you past the blank page.</small></div>
+          <div class="flow-arrow" aria-hidden="true">→</div>
+          <div class="practice-step"><span>STEP 02</span><div class="step-icon mic-icon" aria-hidden="true">◉</div><strong>Speak out loud</strong><small>A timer and live transcript keep the attempt moving.</small></div>
+          <div class="flow-arrow" aria-hidden="true">→</div>
+          <div class="practice-step"><span>STEP 03</span><div class="step-icon feedback-icon" aria-hidden="true">↗</div><strong>Review & reflect</strong><small>Get structured feedback on the attempt.</small></div>
+        </div>
+      </section>
+
+      <section class="case-section case-split" aria-labelledby="feedback-title">
+        <div class="section-marker"><span>03</span><span>THE FEEDBACK LOOP</span></div>
+        <div class="case-prose">
+          <h2 id="feedback-title">Not just a score. <em>A next step.</em></h2>
+          <p>After a session, the app sends the speaking topic and transcript to Claude for evaluation. The response is structured around a score from 1 to 10, an overall verdict, strengths, improvement suggestions, and extra angles the speaker could explore.</p>
+          <p>The point isn't to make a number the final word on someone's speaking ability. It's to turn one attempt into something the user can look at, learn from, and use to guide the next one. The results interface presents the score visually and breaks the feedback into scannable sections.</p>
+          <p>That structure also gives the AI a clear job. Rather than returning an unbounded paragraph, it returns fields the interface can present consistently.</p>
+        </div>
+        <aside class="feedback-note">
+          <span class="feedback-note-label">THE FEEDBACK SHAPE</span>
+          <div class="feedback-score"><strong>07</strong><span>/ 10</span></div>
+          <div class="feedback-line"><span>Strengths</span><i></i></div>
+          <div class="feedback-line"><span>Ways to improve</span><i></i></div>
+          <div class="feedback-line"><span>Try exploring</span><i></i></div>
+          <small>Illustrative structure, not a real session result.</small>
+        </aside>
+      </section>
+
+      <section class="case-section" aria-labelledby="under-the-hood-title">
+        <div class="section-marker"><span>04</span><span>UNDER THE HOOD</span></div>
+        <div class="case-prose">
+          <h2 id="under-the-hood-title">Keep the browser experience simple. <em>Keep the secret server-side.</em></h2>
+          <p>The frontend is built with vanilla HTML, CSS, and JavaScript. Speech recognition uses the browser's Web Speech API to transcribe the session in real time; it works best in Chromium-based browsers, so that compatibility is worth knowing up front.</p>
+          <p>When the user asks for feedback, the app sends the topic and transcript to a Vercel serverless function. That function calls the Anthropic Claude API using an API key stored in Vercel's environment variables, rather than exposing the key in client-side code. The response is parsed into structured fields, with safeguards for model output and error handling for failed requests.</p>
+          <p>That separation gave the project a small footprint without putting the AI integration directly in the browser: one focused frontend, one serverless evaluation endpoint, and a clear handoff between them.</p>
+        </div>
+        <div class="architecture" aria-label="Simplified application architecture">
+          <div class="architecture-node"><span>01 / CLIENT</span><strong>Browser UI</strong><small>HTML · CSS · JavaScript</small></div>
+          <div class="architecture-connector"><span>topic + transcript</span><b>→</b></div>
+          <div class="architecture-node architecture-server"><span>02 / SERVERLESS</span><strong>Vercel function</strong><small>API key stays in environment variables</small></div>
+          <div class="architecture-connector"><span>evaluation request</span><b>→</b></div>
+          <div class="architecture-node architecture-ai"><span>03 / AI</span><strong>Claude API</strong><small>Structured coaching feedback</small></div>
+        </div>
+      </section>
+
+      <section class="case-section case-reflection" aria-labelledby="reflection-title">
+        <div class="section-marker"><span>05</span><span>WHAT CHANGED</span></div>
+        <div class="case-prose">
+          <h2 id="reflection-title">A project that gave me a reason to <em>practise.</em></h2>
+          <p>Building it gave me a way to act on a problem I had been sitting with. Using it has helped me feel more comfortable speaking again — not as some dramatic before-and-after, but as a small, practical step in the right direction.</p>
+          <p>That is also why the name matters to me. The goal was never to become a perfect speaker in one session. It was to make it easier to show up, try, get a little feedback, and try again.</p>
+          <p>There is more I could add, including session history and ways to track progress over time. For now, the core loop is the part I wanted to make real: a prompt, a speaking attempt, and feedback that gives you somewhere to go next.</p>
+        </div>
+      </section>
+
+      <section class="case-end" aria-labelledby="case-end-title">
+        <div class="case-end-copy">
+          <span class="eyebrow">A SMALL STEP, NOT A FINISHED STORY</span>
+          <h2 id="case-end-title">Want to try it?</h2>
+          <p>Explore the live build or look through the code behind it.</p>
+        </div>
+        <div class="case-actions">
+          <a class="case-action-primary" href="https://baby-steps-to-the-mic-adityarghhs-projects.vercel.app/" target="_blank" rel="noopener noreferrer">OPEN THE LIVE PROJECT ↗</a>
+          <a href="https://github.com/adityarghh/Baby-steps-to-the-mic" target="_blank" rel="noopener noreferrer">VIEW SOURCE ON GITHUB ↗</a>
+        </div>
+      </section>
+
+      <a class="back-to-work-bottom" href="index.html#work"><span>←</span> BACK TO ALL SELECTED WORK</a>
+    </div>
+  </main>
+
+  <footer class="case-footer">
+    <a class="wordmark footer-mark" href="index.html#top">aditya<span>raj</span><b>®</b></a>
+    <span>BUILT WITH CURIOSITY, NOT A PERSONAL BRAND WORKSHOP.</span>
+    <a href="https://github.com/adityarghh" target="_blank" rel="noreferrer">GITHUB ↗</a>
+    <span>© <span id="year"></span> / STILL FIGURING IT OUT</span>
+  </footer>
+  <script src="case-study.js"></script>
+</body>
+</html>

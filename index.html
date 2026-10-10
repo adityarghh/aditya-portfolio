@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#eeeae2">
+  <title>Aditya Raj — making things, figuring things out</title>
+  <meta name="description" content="The workbench of Aditya Raj: software, experiments, and things I'm figuring out.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="wordmark" href="#top" aria-label="Aditya Raj home">aditya<span>raj</span><b>®</b></a>
+    <nav aria-label="Main navigation">
+      <a href="#work">work <sup>03</sup></a>
+      <a href="#about">about</a>
+      <a href="#notes">currently</a>
+      <a href="#contact" class="nav-contact">say hello ↗</a>
+    </nav>
+    <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">menu +</button>
+    <button class="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false"><span class="theme-toggle-icon" aria-hidden="true">☾</span><span class="theme-toggle-text">DARK</span></button>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-kicker"><span class="hand-arrow">↘</span> SOMEWHERE BETWEEN AN IDEA AND A WORKING PRODUCT.</div>
+      <div class="hero-grid">
+        <h1>I make things<br>to <em>understand</em><br>how they work<span class="period">.</span></h1>
+        <div class="hero-aside">
+          <p class="intro">I'm Aditya — a CSE student who likes <span class="curious-word" tabindex="0" data-note="Usually the fun part starts here.">pulling ideas apart</span>, making something out of them, and occasionally <span class="curious-word" tabindex="0" data-note="Yes, even after it already worked.">redesigning the same button twelve times</span>.</p>
+          <a class="text-link" href="#work">A few things I've made <span>↓</span></a>
+          <div class="margin-note">not a startup pitch.<br>just me, on the internet.<span class="clock-line">TIME RN <b class="live-clock">--:--:--</b></span></div>
+        </div>
+      </div>
+      <div class="hero-bottom">
+        <span>CODE / DESIGN / SIDE QUESTS</span>
+        <span class="scribble">less talk, more prototypes ↗</span>
+        <span>SCROLL TO EXPLORE ↓</span>
+      </div>
+      <button class="shape shape-star surprise-trigger" type="button" aria-label="A small surprise">✳</button><div class="surprise-toast" role="status" aria-live="polite" hidden></div>
+      <div class="shape shape-ring" aria-hidden="true"></div>
+    </section>
+
+    <section class="work section-pad" id="work">
+      <div class="section-heading">
+        <div><span class="eyebrow">01 — SELECTED WORK</span><h2>Made so far<span class="period">.</span></h2></div>
+        <div class="work-heading-tools">
+          <p>A mix of useful, curious, and “I wonder if I can build that” projects.</p>
+          <label class="preview-toggle" title="Toggle cursor-following project previews">
+            <span class="preview-toggle-label">PREVIEWS</span>
+            <input id="preview-toggle-input" type="checkbox" checked aria-label="Enable project hover previews">
+            <span class="toggle-track" aria-hidden="true"><span class="toggle-thumb"></span></span>
+          </label>
+        </div>
+      </div>
+
+      <div class="project-browser" aria-label="Selected projects">
+        <button class="project-row" type="button" data-project="mic">
+          <span class="project-index">01</span>
+          <span class="project-title-wrap"><span class="project-title">Baby Steps to the Mic</span><span class="project-blurb">An AI speaking coach for practicing on the spot, getting unstuck, and learning from each attempt.</span></span>
+          <span class="project-kind">AI / SPEECH</span><span class="project-arrow">↗</span>
+        </button>
+        <button class="project-row" type="button" data-project="paperbrain">
+          <span class="project-index">02</span>
+          <span class="project-title-wrap"><span class="project-title">Paperbrain</span><span class="project-blurb">A focus and discipline tracker that turns work sessions into patterns you can actually learn from.</span></span>
+          <span class="project-kind">PRODUCTIVITY</span><span class="project-arrow">↗</span>
+        </button>
+        <button class="project-row" type="button" data-project="more">
+          <span class="project-index">03</span>
+          <span class="project-title-wrap"><span class="project-title">The More I Know, The Better</span><span class="project-blurb">A visual learning roadmap builder that maps what to learn, what comes first, and where to go next.</span></span>
+          <span class="project-kind">AI / LEARNING</span><span class="project-arrow">↗</span>
+        </button>
+      </div>
+
+      <div class="project-hover-preview" aria-hidden="true">
+        <div class="preview-caption"><span>PROJECT PREVIEW</span><span class="preview-number">01 / 03</span></div>
+        <div class="preview-art preview-mic is-active">
+          <img class="baby-steps-shot" src="assets/baby-steps-real.png" alt="Baby Steps to the Mic live speaking practice screen">
+        </div>
+        <div class="preview-art preview-paperbrain">
+          <img class="paperbrain-shot" src="assets/paperbrain-real.png" alt="Paperbrain focus and discipline dashboard">
+        </div>
+        <div class="preview-art preview-roadmap">
+          <img class="tmik-generation-shot" src="assets/tmik-generation.png" alt="The More I Know, The Better generating a learning roadmap">
+          <img class="tmik-roadmap-shot" src="assets/tmik-roadmap.png" alt="The More I Know, The Better dependency graph for learning portfolios">
+        </div>
+        <div class="preview-instruction">HOVER TO PREVIEW <span>↗</span></div>
+      </div>
+
+      <dialog class="project-dialog" aria-labelledby="dialog-title">
+        <button class="dialog-close" type="button" aria-label="Close project details">×</button>
+        <div class="dialog-topline"><span class="dialog-index">PROJECT / 01</span><span class="dialog-category">AI / SPEECH</span></div>
+        <div class="dialog-layout">
+          <div class="dialog-visual"></div>
+          <div class="dialog-copy">
+            <h3 id="dialog-title">Baby Steps to the Mic</h3>
+            <p class="dialog-description"></p>
+            <div class="dialog-tags"></div>
+            <div class="dialog-links"></div>
+          </div>
+        </div>
+        <div class="dialog-bottom"><span>ADITYA RAJ / SELECTED WORK</span><span>ESC TO CLOSE ↗</span></div>
+      </dialog>
+    </section>
+
+    <section class="about section-pad" id="about">
+      <div class="section-heading">
+        <div><span class="eyebrow">02 — THE PERSON AT THE KEYBOARD</span><h2>A little more human<span class="period">.</span></h2></div>
+      </div>
+      <div class="about-grid">
+        <div class="about-big">I get curious.<br>I go down<br><em class="curious-word" tabindex="0" data-note="There is probably a Wikipedia tab involved.">rabbit holes.</em></div>
+        <div class="about-copy">
+          <p>Music, design, psychology, the internet's stranger corners, and — somewhat unexpectedly — politics. I'm interested in why things look, sound, and work the way they do.</p>
+          <p>Sometimes that curiosity turns into something I make. Sometimes it turns into seventeen open tabs and even more questions.</p>
+          <button class="text-link about-more" type="button">There's more to me <span>↗</span></button>
+          <div class="about-signoff">— Aditya <span>↙</span></div>
+        </div>
+      </div>
+    </section>
+
+    <dialog class="about-dialog" aria-labelledby="about-dialog-title">
+      <button class="dialog-close about-dialog-close" type="button" aria-label="Close About">×</button>
+      <div class="about-dialog-kicker">A LITTLE MORE CONTEXT</div>
+      <div class="about-intro">
+        <img class="about-portrait" src="assets/aditya-photo.png" alt="Aditya Raj" />
+        <div class="about-intro-copy">
+          <h3 id="about-dialog-title">Hey, I'm Aditya.</h3>
+          <p class="about-lede">I'm usually interested in five different things at once. Occasionally, they even connect.</p>
+        </div>
+      </div>
+      <div class="about-dialog-body">
+        <p>Music, design, psychology, politics, and whatever strange corner of the internet I've wandered into lately. I like pulling at a question until it turns into ten more questions. It's a terrible way to get through a to-do list, but a pretty good way to find ideas.</p>
+        <p>That curiosity tends to spill into what I make. I like playing with how things look and feel just as much as figuring out how they work. Sometimes it becomes a project; sometimes it's just a new folder called “experiment 2 final final”.</p>
+        <p>I'm still figuring out where all these interests lead. For now, I'm happy learning, making things, changing my mind, and seeing what sticks.</p>
+      </div>
+      <div class="about-resume">
+        <div class="about-resume-copy">
+          <span class="about-resume-label">THE MORE FORMAL VERSION</span>
+          <strong>Want the résumé?</strong>
+          <small>Education, experience, skills and the official-looking bits.</small>
+        </div>
+        <div class="about-resume-actions">
+          <a href="assets/aditya-raj-resume.pdf" target="_blank" rel="noopener noreferrer">VIEW PDF ↗</a>
+        </div>
+      </div>
+      <div class="about-socials" aria-label="Connect with Aditya">
+        <a href="https://www.linkedin.com/in/aditya-raj-79a53b314/" target="_blank" rel="noreferrer">LINKEDIN ↗</a>
+        <a href="mailto:adiwildinn@gmail.com">GMAIL ↗</a>
+        <a href="https://github.com/adityarghh" target="_blank" rel="noreferrer">GITHUB ↗</a>
+      </div>
+    </dialog>
+
+    <section class="currently section-pad" id="notes">
+      <div class="section-heading">
+        <div><span class="eyebrow">03 — OPEN TABS IN MY BRAIN</span><h2>Currently<span class="period">.</span></h2></div>
+        <p>A small status report. Subject to change after one good idea and three bad decisions.</p>
+      </div>
+      <div class="now-grid">
+        <div class="now-card"><span class="now-number">01</span><span class="now-label">BUILDING</span><h3>Small things<br>that actually ship.</h3><p>Trying to finish more, polish what matters, and stop treating every side project like it needs a cinematic universe.</p></div>
+        <div class="now-card now-card-yellow"><span class="now-number">02</span><span class="now-label">LISTENING TO</span><h3>Radiohead,<br>as usual.</h3><p>Some habits are less a phase and more a permanent tab. This is one of them.</p><span class="music-mark" role="button" tabindex="0" aria-label="Reveal a tiny music easter egg">♫</span></div>
+        <div class="now-card"><span class="now-number">03</span><span class="now-label">LEARNING</span><h3>Designing with<br>intention.</h3><p>Less “add an animation because it moves”, more “does this make the experience better?”</p></div>
+      </div>
+    </section>
+
+    <section class="contact section-pad" id="contact">
+      <span class="eyebrow">04 — END OF PAGE, NOT END OF CONVERSATION</span>
+      <div class="contact-grid">
+        <h2>Have a good<br>question? <em>Ask it.</em></h2>
+        <div class="contact-side"><p>For projects, collaborations, interesting problems, or a conversation that isn't just “please find attached”.</p><a class="whatsapp-cta" href="https://wa.me/917482891365?text=Hey%20Aditya%21%20I%20came%20across%20your%20portfolio%20and%20wanted%20to%20talk." target="_blank" rel="noopener noreferrer" aria-label="Message Aditya on WhatsApp">Message me on WhatsApp <span aria-hidden="true">↗</span></a><small class="contact-alternatives"><button class="contact-open contact-form-link" type="button">Or use the contact form ↗</button><span aria-hidden="true"> · </span><a class="direct-gmail" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=adiwildinn%40gmail.com&amp;su=Let%27s%20talk" target="_blank" rel="noreferrer">or contact me through Gmail ↗</a></small></div>
+      </div>
+      <div class="contact-doodle" aria-hidden="true">✳</div>
+    </section>
+
+    <dialog class="contact-dialog" aria-labelledby="contact-dialog-title">
+      <button class="dialog-close contact-dialog-close" type="button" aria-label="Close contact form">×</button>
+      <div class="contact-dialog-kicker">A MESSAGE, NOT A MEETING INVITE</div>
+      <div class="contact-dialog-heading">
+        <h3 id="contact-dialog-title">Let's talk<span>.</span></h3>
+        <p>Tell me a little about what you have in mind. I'll take it from there.</p>
+      </div>
+      <form class="contact-form" action="https://formspree.io/f/mljgbkvg" method="POST">
+        <div class="contact-fields-row">
+          <label>Your name
+            <input type="text" name="name" placeholder="What should I call you?" autocomplete="name" required>
+          </label>
+          <label>Your email
+            <input type="email" name="email" placeholder="you@example.com" autocomplete="email" required>
+          </label>
+        </div>
+        <label>What's this about?
+          <input type="text" name="subject" placeholder="A project, collaboration, question..." required>
+        </label>
+        <label>Your message
+          <textarea name="message" rows="5" placeholder="Give me the context. No need to make it formal." required></textarea>
+        </label>
+        <input type="text" name="_gotcha" class="contact-honeypot" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <div class="contact-form-bottom">
+          <p class="contact-form-status" role="status" aria-live="polite">I'll only use your details to reply to this message.</p>
+          <button class="contact-submit" type="submit">Send message <span>↗</span></button>
+        </div>
+      </form>
+      <div class="contact-dialog-footer"><span>NOT A FAN OF FORMS?</span><a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=adiwildinn%40gmail.com&amp;su=Let%27s%20talk" target="_blank" rel="noreferrer">CONTACT ME DIRECTLY THROUGH GMAIL ↗</a></div>
+    </dialog>
+  </main>
+
+  <footer>
+    <a class="wordmark footer-mark" href="#top">aditya<span>raj</span><b>®</b></a>
+    <span>BUILT WITH CURIOSITY, NOT A PERSONAL BRAND WORKSHOP.</span>
+    <a href="https://github.com/adityarghh" target="_blank" rel="noreferrer">GITHUB ↗</a>
+    <span>© <span id="year"></span> / STILL FIGURING IT OUT</span>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
